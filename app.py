@@ -8,7 +8,7 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 
-engine = create_engine("sqlite:///hawaii.sqlite", connect_args={'check_same_thread': False})
+engine = create_engine("sqlite:///Resources/hawaii.sqlite", connect_args={'check_same_thread': False})
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 
